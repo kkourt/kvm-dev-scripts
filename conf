@@ -1,0 +1,17 @@
+
+NBDDEV="/dev/nbd0"
+
+ROOTIMG="./images/rootfs.qcow2"
+ROOTDIR="./rootfs"
+PACKAGES=("less" "vim" "sudo" "openssh-server" "python3" "docker.io" "curl")
+
+KUBEADMIMG="./images/kubeadmfs.qcow2"
+KUBEADMDIR="./kubeadmfs"
+
+BRIDGE_IFACE="kvm-br"
+VM_IMAGES=("./images/kvm1.qcow2" "./images/kvm2.qcow2")
+VM_NAMES=("kvm1" "kvm2")
+VM_DIRS=("kvm1fs" "kvm2fs")
+VM_NICS_MACS=("52:54:00:12:34:01" "52:54:00:12:34:02")
+
+KERNEL_SOURCE=/usr/src/linux.kvm
